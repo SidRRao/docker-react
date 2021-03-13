@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t SidRRao/docker-react -f Dockerfile.dev .
+  - docker build -t sidrrao/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true SidRRao/docker-react npm run test -- -- coverage
+  - docker run -e CI=true sidrrao/docker-react npm run test -- -- coverage
